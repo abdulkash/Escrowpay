@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_transaction"
+            android:icon="@drawable/transaction"
+            android:title="@string/menu_transaction" />
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_baseline_dashboard_24"
+            android:title="@string/menu_dashboard" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/user"
+            android:title="@string/menu_profile" />
+
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="@string/menu_escrow">
+            <menu>
+                <item
+                    android:id="@+id/nav_make_escrow"
+                    android:icon="@drawable/handshake"
+                    android:title="@string/menu_make_escrow" />
+                <item
+                    android:id="@+id/nav_myescrow"
+                    android:icon="@drawable/money"
+                    android:title="@string/menu_myescrow" />
+            </menu>
+        </item>
+    </group>
+
+<group android:checkableBehavior="single">
+    <item android:title="@string/menu_payout">
+        <menu>
+            <item
+                android:id="@+id/nav_payout"
+                android:icon="@drawable/coin"
+                android:title="@string/menu_payout_now" />
+            <item
+                android:id="@+id/nav_payout_log"
+                android:icon="@drawable/log"
+                android:title="@string/menu_payout_log" />
+        </menu>
+
+    </item>
+
+</group>
+</menu>

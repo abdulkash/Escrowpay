@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_color"
+    tools:context=".ui.settings.SettingsFragment">
+
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:background="@color/purple_500"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center|top">
+
+        <ImageView
+            android:id="@+id/profile_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center|top"
+            android:tint="@color/white"
+            app:srcCompat="@drawable/ic_baseline_person_24" />
+
+        <TextView
+            android:id="@+id/txt_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_img"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/karla"
+            android:text="Abdul Kash"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txt_profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_profile_name"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/karla"
+            android:text="abdulkash64@gmail.com"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginRight="21dp"
+        app:cardCornerRadius="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <Button
+                android:id="@+id/btn_voucher"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/coupon"
+                android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:fontFamily="@font/karla"
+                android:text="vouchers"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/btn_vitual_crd"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/credit_card"
+                android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:fontFamily="@font/karla"
+                android:text="vitual cards"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/btn_vas_purchase"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/checklist"
+                android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:fontFamily="@font/karla"
+                android:text="vas purchase"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/btn_change_pass"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/password"
+                android:drawableTint="@color/purple_500"
+                android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:fontFamily="@font/karla"
+                android:text="change password"
+                android:textAlignment="viewStart" />
+            <Button
+                android:id="@+id/btn_change_username"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/user_person"
+                android:drawableTint="@color/purple_500"
+                android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:fontFamily="@font/karla"
+                android:text="change username"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/btn_2fa_security"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/secure_shield"
+                android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:fontFamily="@font/karla"
+                android:text="2fa security"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/btn_logout"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/log_out"
+                android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:fontFamily="@font/karla"
+                android:text="log out"
+                android:textAlignment="viewStart" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

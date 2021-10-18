@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.escrowpay.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_dashboard2"
+            app:destination="@id/nav_dashboard" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_settings2"
+            app:destination="@id/nav_settings" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_transaction"
+            app:destination="@id/nav_transaction" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_make_escrow"
+            app:destination="@id/nav_make_escrow" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_myescrow"
+            app:destination="@id/nav_myescrow" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_payout"
+            app:destination="@id/nav_payout" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_myescrow2"
+            app:destination="@id/nav_myescrow" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_payout_log"
+            app:destination="@id/nav_payout_log" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_transaction"
+        android:name="com.example.escrowpay.ui.transaction.TransactionFragment"
+        android:label="@string/menu_transaction"
+        tools:layout="@layout/fragment_transaction" >
+        <action
+            android:id="@+id/action_nav_transaction_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.example.escrowpay.ui.dashboard.DashboardFragment"
+        android:label="@string/menu_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_nav_dashboard_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popUpTo="@+id/nav_home"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.escrowpay.ui.settings.SettingsFragment"
+        android:label="@string/menu_profile_settings"
+        tools:layout="@layout/settings_fragment" >
+        <action
+            android:id="@+id/action_nav_settings_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popUpTo="@+id/nav_home"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_payout"
+        android:name="com.example.escrowpay.ui.payout.Payout"
+        android:label="Payout"
+        tools:layout="@layout/payout_fragment" >
+        <action
+            android:id="@+id/action_nav_payout_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popUpTo="@+id/nav_home"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_payout_log"
+        android:name="com.example.escrowpay.ui.payout.PayoutLog"
+        android:label="PayoutLog"
+        tools:layout="@layout/payout_log_fragment" >
+        <action
+            android:id="@+id/action_nav_payout_log_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popUpTo="@+id/nav_home"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_make_escrow"
+        android:name="com.example.escrowpay.ui.escrow.MakeEscrow"
+        android:label="Escrow"
+        tools:layout="@layout/make_escrow_fragment" >
+        <action
+            android:id="@+id/action_nav_make_escrow_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popUpTo="@+id/nav_home"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_myescrow"
+        android:name="com.example.escrowpay.ui.escrow.MyEscrow"
+        android:label="My Escrow"
+        tools:layout="@layout/my_escrow_fragment" >
+        <action
+            android:id="@+id/action_nav_myescrow_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popUpTo="@+id/nav_home"
+            app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>
