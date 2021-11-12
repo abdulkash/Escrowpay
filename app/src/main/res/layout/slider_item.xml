@@ -2,8 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/slider_img"
@@ -15,10 +15,11 @@
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@+id/header_caption"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/deposit" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/security" />
 
     <TextView
         android:id="@+id/header_caption"
@@ -27,12 +28,13 @@
         android:layout_marginBottom="3dp"
         android:fontFamily="@font/karla"
         android:text="place to invite your friends"
+        android:textAlignment="center"
         android:textAllCaps="true"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/subtitle_caption"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/slider_img" />
 
@@ -43,6 +45,7 @@
         android:layout_marginTop="3dp"
         android:fontFamily="@font/karla"
         android:text="Track details and more importantly to keep a record of our wins and losses."
+        android:textAlignment="center"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"

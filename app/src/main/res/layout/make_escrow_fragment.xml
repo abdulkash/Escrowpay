@@ -16,7 +16,7 @@
         android:layout_marginStart="326dp"
         android:layout_marginEnd="29dp"
         android:layout_marginBottom="29dp"
-        android:backgroundTint="@color/purple_500"
+        android:backgroundTint="@color/teal_200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,6 +37,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.498">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
 
         <LinearLayout
             android:id="@+id/linearLayout10"
@@ -81,6 +86,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:layout_margin="10dp"
+                android:backgroundTint="@color/teal_200"
                 android:drawableLeft="@drawable/ic_baseline_add_24"
                 android:fontFamily="@font/karla"
                 android:text="upload agreement document if any" />
@@ -100,6 +106,42 @@
                     android:fontFamily="@font/karla"
                     android:hint="Enter Amount" />
             </com.google.android.material.textfield.TextInputLayout>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:textStyle="bold"
+               android:text="Charge will bear (0.6% charge apply)"
+               />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/charge_bearer_group"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/radio_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/karla"
+                    android:text="Me"/>
+                <RadioButton
+                    android:id="@+id/radio_opponent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/karla"
+                    android:text="Opponent"/>
+                <RadioButton
+                    android:id="@+id/radio_both"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/karla"
+                    android:layout_margin="5dp"
+                    android:text="Both"/>
+
+
+            </RadioGroup>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/select_opponent"
@@ -110,6 +152,8 @@
                 android:hint="Select Opponent"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="444dp">
+
+
 
                 <AutoCompleteTextView
                     android:id="@+id/list_opponent"
@@ -125,11 +169,12 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:fontFamily="@font/karla"
+                android:backgroundTint="@color/teal_200"
                 android:text="submit escrow"
                 tools:layout_editor_absoluteX="164dp"
                 tools:layout_editor_absoluteY="509dp" />
         </LinearLayout>
-
+        </androidx.core.widget.NestedScrollView>
     </androidx.cardview.widget.CardView>
 
     <TextView

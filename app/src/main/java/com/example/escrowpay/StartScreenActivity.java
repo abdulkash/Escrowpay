@@ -27,18 +27,18 @@ public class StartScreenActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_start_screen);
+        setContentView(R.layout.start_screen);
 
         login = findViewById(R.id.start_login);
         register = findViewById(R.id.start_register);
         sliderView = findViewById(R.id.image_slider);
 
         sliderModels = new ArrayList<>();
-        sliderModels.add(new ImageSliderModel(R.drawable.assessment,"THE PLACE TO INVITE YOUR FRIENDS","Track details and more importantly to keep a record of our wins and losses."));
-        sliderModels.add(new ImageSliderModel(R.drawable.deposit,"DEPOSIT YOUR FUND FOR ESCROW","Track details and more importantly to keep a record of our wins and losses."));
-        sliderModels.add(new ImageSliderModel(R.drawable.secure_shield1,"MAKE AN ESCROW FOR OPPONENT","Make escrow for your security"));
-        sliderModels.add(new ImageSliderModel(R.drawable.deal,"EARN FORM DEAL FROM CLIENTS","You win, escrow protects your money."));
-        sliderModels.add(new ImageSliderModel(R.drawable.piggy_bank,"SAVE YOUR MONEY BE HAPPY","Scammers nightmare, Escrow"));
+        sliderModels.add(new ImageSliderModel(R.drawable.invite,"THE PLACE TO INVITE YOUR FRIENDS","Track details and more importantly to keep a record of our wins and losses."));
+        sliderModels.add(new ImageSliderModel(R.drawable.deposit_splash,"DEPOSIT YOUR FUND FOR ESCROW","Track details and more importantly to keep a record of our wins and losses."));
+        sliderModels.add(new ImageSliderModel(R.drawable.security,"MAKE AN ESCROW FOR OPPONENT","Make escrow for your security"));
+        sliderModels.add(new ImageSliderModel(R.drawable.deal_splash,"EARN FORM DEAL FROM CLIENTS","You win, escrow protects your money."));
+        sliderModels.add(new ImageSliderModel(R.drawable.savings,"SAVE YOUR MONEY BE HAPPY","Scammers nightmare, Escrow"));
 
 
 
